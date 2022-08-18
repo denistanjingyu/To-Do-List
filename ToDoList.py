@@ -35,12 +35,12 @@ def main():
         print("Tasks to Complete:")
         print("------------------")
         for index, todo in enumerate(to_Do_List):
-            print("{}) {}".format(index+1, todo))
-        
+            print(f"{index + 1}) {todo}")
+
         print("\nCommands: ")
         print("Add tasks: ")
         print("rm <#>\n")
-    
+
         prompt = input("> ").strip().lower()
         if prompt in exit:
             break
